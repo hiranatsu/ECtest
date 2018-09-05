@@ -76,7 +76,7 @@ table {
 				 	<span>商品名</span>
 				 </td>
 				 <td>
-				 	<s:propertu value="session.buyItem_name"/>
+				 	<s:property value="session.buyItem_name"/>
 				 </td>
 				</tr>
 				<tr>

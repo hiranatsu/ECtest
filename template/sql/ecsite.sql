@@ -20,7 +20,7 @@ create table login_user_transaction(
 drop table if exists item_info_transaction;
 
 create table item_info_transaction(
-	id int not bu;; primary key auto_increment,
+	id int not null primary key auto_increment,
 	item_name varchar(30),
 	item_price int,
 	item_stock int,
@@ -31,7 +31,7 @@ create table item_info_transaction(
 drop table if exists user_buy_item_transaction;
 
 create table user_buy_item_transaction(
-	id not null primary key auto_increment,
+	id int not null primary key auto_increment,
 	item_transaction_id int,
 	total_price int,
 	total_count int,
@@ -41,5 +41,5 @@ create table user_buy_item_transaction(
 	delete_date datetime
 );
 
-INSERT INTO item_info_transaction(item_name, item_price, item_stock) VALIES("ノートBook", 100, 50);
+INSERT INTO item_info_transaction(item_name, item_price, item_stock) VALUES("ノートBook", 100, 50);
 INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("internous", "internous01", "test");

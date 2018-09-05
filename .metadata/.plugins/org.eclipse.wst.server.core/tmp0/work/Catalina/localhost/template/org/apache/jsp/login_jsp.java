@@ -251,7 +251,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_s_005fpassword_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fpassword_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
     // /login.jsp(77,3) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fpassword_005f0.setName("password");
+    _jspx_th_s_005fpassword_005f0.setName("loginPassword");
     int _jspx_eval_s_005fpassword_005f0 = _jspx_th_s_005fpassword_005f0.doStartTag();
     if (_jspx_th_s_005fpassword_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fs_005fpassword_0026_005fname_005fnobody.reuse(_jspx_th_s_005fpassword_005f0);
