@@ -14,6 +14,7 @@
 <title>UserCreateConfirm画面</title>
 <style type="text/css">
 /*=====TAG LAYOUT=====*/
+
 	body {
 	margin:0;
 	padding:0;
@@ -54,9 +55,8 @@
 	background-color:black;
 	clear:both;
 	}
-
-
 </style>
+
 </head>
 <body>
 	<div id="header">
@@ -70,7 +70,7 @@
 		<div>
 			<h3>登録する内容は以下でよろしいですか。</h3>
 			<table>
-				<s:form action="UserCreateConfirmAction">
+				<s:form action="UserConfirmAction">
 				<tr id="box">
 					<td>
 						<label>ログインID:</label>

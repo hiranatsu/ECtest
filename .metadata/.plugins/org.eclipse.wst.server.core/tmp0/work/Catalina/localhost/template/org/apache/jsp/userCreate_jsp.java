@@ -182,7 +182,7 @@ public final class userCreate_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_s_005fif_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fif_005f0.setParent(null);
     // /userCreate.jsp(69,2) name = test type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fif_005f0.setTest("errorMessage!=");
+    _jspx_th_s_005fif_005f0.setTest("errorMessage!=\"\"");
     int _jspx_eval_s_005fif_005f0 = _jspx_th_s_005fif_005f0.doStartTag();
     if (_jspx_eval_s_005fif_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       if (_jspx_eval_s_005fif_005f0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
@@ -243,7 +243,7 @@ public final class userCreate_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_s_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fform_005f0.setParent(null);
     // /userCreate.jsp(73,2) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fform_005f0.setAction("UserCreateConfirmAction");
+    _jspx_th_s_005fform_005f0.setAction("UserConfirmAction");
     int _jspx_eval_s_005fform_005f0 = _jspx_th_s_005fform_005f0.doStartTag();
     if (_jspx_eval_s_005fform_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       if (_jspx_eval_s_005fform_005f0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {

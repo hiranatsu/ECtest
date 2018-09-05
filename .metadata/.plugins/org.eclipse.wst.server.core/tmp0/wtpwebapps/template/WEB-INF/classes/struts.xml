@@ -26,11 +26,16 @@
 	method="execute">
 		<result name="success">userCreate.jsp</result>
 	</action>
-<!-- UserCreateConfirmAction -->
+<!-- UserConfirmAction -->
 	<action name="UserConfirmAction" class="com.internousdev.template.action.UserConfirmAction"
 	method="execute">
 		<result name="success">userCreateConfirm.jsp</result>
 		<result name="error">userCreate.jsp</result>
+	</action>
+<!-- UserCompleteAction -->
+	<action name="UserCompleteAction" class="com.internousdev.template.action.UserCompleteAction"
+	method="execute">
+		<result name="success">userCreateComplete.jsp</result>
 	</action>
 
 

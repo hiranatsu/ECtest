@@ -23,7 +23,7 @@ public class UserConfirmAction extends ActionSupport implements SessionAware{
 		&& !(userName.equals(""))){
 			//確認画面で表示したい値をセッションに格納。
 			session.put("loginUserId", loginUserId);
-			session.put("loginPasswprd", loginPassword);
+			session.put("loginPassword", loginPassword);
 			session.put("userName", userName);
 
 		}else{

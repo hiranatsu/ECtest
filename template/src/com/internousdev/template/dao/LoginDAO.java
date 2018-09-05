@@ -9,7 +9,7 @@ import com.internousdev.template.util.DBConnector;
 
 public class LoginDAO {
 
-	public LoginDTO getLoginUserInfo(String loginUserId, String loginPassword){
+	public LoginDTO getLoginUserInfo(String loginUserId, String loginUserPassword){
 
 		DBConnector dbConnector = new DBConnector();
 		Connection connection = dbConnector.getConnection();
@@ -20,7 +20,7 @@ public class LoginDAO {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
 			preparedStatement.setString(1, loginUserId);
-			preparedStatement.setString(2, loginPassword);
+			preparedStatement.setString(2, loginUserPassword);
 
 			ResultSet resultSet = preparedStatement.executeQuery();
 

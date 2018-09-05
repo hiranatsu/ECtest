@@ -66,11 +66,11 @@
 			<p>UserCreate</p>
 		</div>
 	<div>
-		<s:if test="errorMessage!=">
+		<s:if test='errorMessage!=""'>
 			<s:property value="errorMessage" escape="false"/>
 		</s:if>
 		<table>
-		<s:form action="UserCreateConfirmAction">
+		<s:form action="UserConfirmAction">
 			<tr>
 				<td>
 					<label>ログインID：</label>
