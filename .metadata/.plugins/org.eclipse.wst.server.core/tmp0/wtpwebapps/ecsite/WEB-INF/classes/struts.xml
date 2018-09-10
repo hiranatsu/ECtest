@@ -8,7 +8,7 @@
 	<constant name="struts.devMode" value="true"/>
 	<package name="com.internousdev.ecsite.action" extends="struts-default">
 
-		<!-- CoHomeAction -->
+		<!-- GoHomeAction -->
 		<action name="GoHomeAction" class="com.internousdev.ecsite.action.GoHomeAction"
 		method="execute">
 			<result name="success">home.jsp</result>
@@ -49,25 +49,43 @@
 		</action>
 
 
-		<!-- CompleteAction -->
+		<!-- CreateCompleteAction -->
 		<action name="CreateCompleteAction" class="com.internousdev.ecsite.action.CreateCompleteAction"
 		method="execute">
 			<result name="success">createComplete.jsp</result>
 		</action>
 
 
-		<!--  -->
+		<!-- BuyItemAction -->
+		<action name="BuyItemAction" class="com.internousdev.ecsite.action.BuyItemAction"
+		method="execute">
+			<result name="success">buyItemConfirm.jsp</result>
+			<result name="error">buyItem.jsp</result>
+		</action>
 
 
-		<!--  -->
+		<!-- BuyItemConfirmAction -->
+		<action name="BuyItemConfirmAction" class="com.internousdev.ecsite.action.BuyItemConfirmAction"
+		method="execute">
+			<result name="success">buyItemConfirm.jsp</result>
+			<result name="back">buyItem.jsp</result>
+		</action>
 
 
-		<!--  -->
 
 
-		<!--  -->
+		<!-- MyPageAction -->
+		<action name="MyPageAction" class="com.internousdev.ecsite.action.MyPageAction"
+		method="execute">
+			<result name="success">myPage.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
 
 
-		<!--  -->
+		<!-- LogoutAction -->
+		<action name="LogoutAction" class="com.internousdev.ecsite.action.LogoutAction"
+		method="execute">
+			<result name="success">home.jsp</result>
+		</action>
 	</package>
 </struts>

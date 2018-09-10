@@ -23,7 +23,7 @@ public class CreateConfirmAction extends ActionSupport implements SessionAware{
 
 			session.put("loginUserId", loginUserId);
 			session.put("loginPassword", loginPassword);
-			session.put("userNAme", userName);
+			session.put("userName", userName);
 
 		}else{
 			setErrorMessage("未入力の項目があります。");
