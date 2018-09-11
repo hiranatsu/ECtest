@@ -17,9 +17,9 @@ public class MyPageDAO {
 	//DBから購入履歴を取得するためのメソッド
 	public ArrayList<MyPageDTO> getMyPageUserInfo
 	(String item_transaction_id, String user_master_id) throws SQLException{
-		ArrayList<MyPageDTO> mpDTO = new ArrayList<MyPageDTO>();
+		ArrayList<MyPageDTO> mpList = new ArrayList<MyPageDTO>();
 		String sql =
-				"SELECT	ubit.id, iit.item_name, ubit.total_price, ubit.total_count, ubit.pay, ubit.insert_date FROM user_buy_item_transaction ubit LEFT JOIN item_info_transaction iit ON ubit.item_transaction_id = ? AND ubit.user_master_id = ? ORDER BY insert_date DESC";
+				"SELECT ubit.id, iit.item_name, ubit.total_price, ubit.total_count, ubit.pay, ubit.insert_date FROM user_buy_item_transaction ubit LEFT JOIN item_info_transaction iit ON ubit.item_transaction_id = ? AND ubit.user_master_id = ? ORDER BY insert_date DESC";
 
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);
@@ -36,7 +36,7 @@ public class MyPageDAO {
 				dto.setTotalCount(rs.getString("total_count"));
 				dto.setPayment(rs.getString("pay"));
 				dto.setInsert_date(rs.getString("insert_date"));
-				mpDTO.add(dto);
+				mpList.add(dto);
 
 			}
 		}catch(Exception e){
@@ -44,7 +44,7 @@ public class MyPageDAO {
 		}finally{
 			con.close();
 		}
-		return mpDTO;
+		return mpList;
 	}
 
 	//DBから購入履歴を削除するためのメソッド

@@ -163,7 +163,11 @@ public final class myPage_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_s_005furl_005f0(_jspx_page_context))
         return;
       out.write("'>こちら</a></p>\r\n");
-      out.write("\t\t\t<p>ログアウトする場合は<a href='<s;url action=\"LogoutAction\"/>'></a>こちら</p>\r\n");
+      out.write("\t\t\t<p>ログアウトする場合は<a href='");
+      if (_jspx_meth_s_005furl_005f1(_jspx_page_context))
+        return;
+      out.write("'>こちら</a></p>\r\n");
+      out.write("\r\n");
       out.write("\t\t</div>\r\n");
       out.write("\t\t</div>\r\n");
       out.write("\t</div>\r\n");
@@ -195,7 +199,7 @@ public final class myPage_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_s_005fif_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fif_005f0.setParent(null);
     // /myPage.jsp(76,2) name = test type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fif_005f0.setTest("mayPageList == null");
+    _jspx_th_s_005fif_005f0.setTest("mpList == null");
     int _jspx_eval_s_005fif_005f0 = _jspx_th_s_005fif_005f0.doStartTag();
     if (_jspx_eval_s_005fif_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       if (_jspx_eval_s_005fif_005f0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
@@ -242,7 +246,7 @@ public final class myPage_jsp extends org.apache.jasper.runtime.HttpJspBase
       }
       do {
         out.write("\r\n");
-        out.write("\t\t\t<h3>ご購入情報灰化になります。</h3>\r\n");
+        out.write("\t\t\t<h3>ご購入情報は以下になります。</h3>\r\n");
         out.write("\t\t\t<table border=\"1\">\r\n");
         out.write("\t\t\t<tr>\r\n");
         out.write("\t\t\t\t<th>商品名</th>\r\n");
@@ -286,7 +290,7 @@ public final class myPage_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_s_005fiterator_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fiterator_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005felseif_005f0);
     // /myPage.jsp(89,3) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fiterator_005f0.setValue("myPageList");
+    _jspx_th_s_005fiterator_005f0.setValue("mpList");
     int _jspx_eval_s_005fiterator_005f0 = _jspx_th_s_005fiterator_005f0.doStartTag();
     if (_jspx_eval_s_005fiterator_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       if (_jspx_eval_s_005fiterator_005f0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
@@ -567,6 +571,25 @@ public final class myPage_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _005fjspx_005ftagPool_005fs_005furl_0026_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f0);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005furl_005f1(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:url
+    org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f1 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
+    _jspx_th_s_005furl_005f1.setPageContext(_jspx_page_context);
+    _jspx_th_s_005furl_005f1.setParent(null);
+    // /myPage.jsp(109,25) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f1.setAction("LogoutAction");
+    int _jspx_eval_s_005furl_005f1 = _jspx_th_s_005furl_005f1.doStartTag();
+    if (_jspx_th_s_005furl_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005furl_0026_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f1);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005furl_0026_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f1);
     return false;
   }
 }

@@ -73,11 +73,11 @@
 			<p>MyPage</p>
 		</div>
 		<div>
-		<s:if test="mayPageList == null">
+		<s:if test="mpList == null">
 			<h3>ご購入情報はありません。</h3>
 		</s:if>
 		<s:elseif test="message == null">
-			<h3>ご購入情報灰化になります。</h3>
+			<h3>ご購入情報は以下になります。</h3>
 			<table border="1">
 			<tr>
 				<th>商品名</th>
@@ -86,7 +86,7 @@
 				<th>支払い方法</th>
 				<th>購入日</th>
 			</tr>
-			<s:iterator value="myPageList">
+			<s:iterator value="mpList">
 				<tr>
 					<td><s:property value="itemName"/></td>
 					<td><s:property value="totalPrice"/><span>円</span></td>

@@ -266,7 +266,7 @@ public final class userCreate_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write("\t\t\t\t\t\t<label>ログインPASS:</label>\r\n");
         out.write("\t\t\t\t\t</td>\r\n");
         out.write("\t\t\t\t\t<td>\r\n");
-        out.write("\t\t\t\t\t\t<input type=\"text\" name=\"loginUserId\" value=\"\" />\r\n");
+        out.write("\t\t\t\t\t\t<input type=\"text\" name=\"loginPassword\" value=\"\" />\r\n");
         out.write("\t\t\t\t\t</td>\r\n");
         out.write("\t\t\t\t</tr>\r\n");
         out.write("\t\t\t\t<tr>\r\n");

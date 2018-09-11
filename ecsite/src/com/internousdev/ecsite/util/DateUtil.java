@@ -7,7 +7,7 @@ public class DateUtil {
 
 	public String getDate(){
 		Date date = new Date();
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/mm/ddHH:mm:ss");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 
 		return sdf.format(date);
 

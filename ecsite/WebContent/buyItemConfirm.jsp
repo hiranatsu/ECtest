@@ -77,14 +77,14 @@
 			<p>BuyItem</p>
 		</div>
 		<div>
-			<s:form>
+			<s:form action="BuyItemConfirmAction">
 				<tr>
 					<td>商品名</td>
 					<td><s:property value="session.buyItem_name"/></td>
 				</tr>
 				<tr>
 					<td>値段</td>
-					<td><s:property value="session.tootal_price"/><span>円</span></td>
+					<td><s:property value="session.total_price"/><span>円</span></td>
 				</tr>
 				<tr>
 					<td>購入個数</td>

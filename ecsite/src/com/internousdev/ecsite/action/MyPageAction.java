@@ -13,7 +13,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class MyPageAction extends ActionSupport implements SessionAware{
 	public Map<String, Object> session;
-	private MyPageDAO mpDAO = new MyPageDAO ();
+	private MyPageDAO mpDAO = new MyPageDAO();
 	private ArrayList<MyPageDTO> mpList = new ArrayList<MyPageDTO>();
 	private String deleteFlg;
 	private String message;
@@ -45,6 +45,7 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 		}else if(res == 0){
 			setMessage("商品情報の削除に失敗しました。");
 		}
+	}
 
 		public void setDeleteFlg(String deleteFlg){
 			this.deleteFlg = deleteFlg;
@@ -64,6 +65,5 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 		public void setMessage(String message){
 			this.message = message;
 		}
-	}
 
 }
