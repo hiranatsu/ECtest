@@ -94,7 +94,7 @@ public final class buyItemConfirm_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("\t/*==========ID LAYOUT==========*/\r\n");
       out.write("\t#top{\r\n");
       out.write("\twidth:780px;\r\n");
-      out.write("\theight:30px auto;\r\n");
+      out.write("\tmargin:30px auto;\r\n");
       out.write("\tborder:1px solid #333;\r\n");
       out.write("\t}\r\n");
       out.write("\r\n");
@@ -132,7 +132,7 @@ public final class buyItemConfirm_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("\t</div>\r\n");
       out.write("\t<div id=\"main\">\r\n");
       out.write("\t\t<div id=\"top\">\r\n");
-      out.write("\t\t\t<p>BuyItem</p>\r\n");
+      out.write("\t\t\t<p>BuyItemConfirm</p>\r\n");
       out.write("\t\t</div>\r\n");
       out.write("\t\t<div>\r\n");
       out.write("\t\t\t");

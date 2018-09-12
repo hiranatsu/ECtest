@@ -36,7 +36,7 @@
 	/*==========ID LAYOUT==========*/
 	#top{
 	width:780px;
-	height:30px auto;
+	margin:30px auto;
 	border:1px solid #333;
 	}
 
@@ -74,7 +74,7 @@
 	</div>
 	<div id="main">
 		<div id="top">
-			<p>BuyItem</p>
+			<p>BuyItemConfirm</p>
 		</div>
 		<div>
 			<s:form action="BuyItemConfirmAction">

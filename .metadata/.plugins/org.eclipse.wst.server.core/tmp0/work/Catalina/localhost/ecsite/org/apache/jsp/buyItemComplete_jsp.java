@@ -90,7 +90,7 @@ public final class buyItemComplete_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("\t#top{\r\n");
       out.write("\twidth:780px;\r\n");
       out.write("\tmargin:30px auto;\r\n");
-      out.write("\tborder:1px;\r\n");
+      out.write("\tborder:1px solid #333;\r\n");
       out.write("\t}\r\n");
       out.write("\r\n");
       out.write("\t#header{\r\n");
