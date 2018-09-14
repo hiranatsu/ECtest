@@ -11,7 +11,7 @@ public final class buyItemConfirm_jsp extends org.apache.jasper.runtime.HttpJspB
 
   private static java.util.List _jspx_dependants;
 
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fform;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fform_0026_005faction;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody;
 
   private javax.el.ExpressionFactory _el_expressionfactory;
@@ -22,14 +22,14 @@ public final class buyItemConfirm_jsp extends org.apache.jasper.runtime.HttpJspB
   }
 
   public void _jspInit() {
-    _005fjspx_005ftagPool_005fs_005fform = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fs_005fform_0026_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
   }
 
   public void _jspDestroy() {
-    _005fjspx_005ftagPool_005fs_005fform.release();
+    _005fjspx_005ftagPool_005fs_005fform_0026_005faction.release();
     _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.release();
   }
 
@@ -69,6 +69,8 @@ public final class buyItemConfirm_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("\t<meta http-equiv=\"itemtoolbar\" content=\"no\"/>\r\n");
       out.write("\t<meta name=\"description\" content=\"\"/>\r\n");
       out.write("\t<meta name=\"keywords\" content=\"\"/>\r\n");
+      out.write("\r\n");
+      out.write("\t<script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"></script>\r\n");
       out.write("\t<title>BuyItemConfirm画面</title>\r\n");
       out.write("\r\n");
       out.write("\t<style type=\"text/css\">\r\n");
@@ -125,7 +127,7 @@ public final class buyItemConfirm_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("</head>\r\n");
       out.write("<body>\r\n");
       out.write("\t<div id=\"id\">\r\n");
-      out.write("\t\t<div id=\"pr\"/>\r\n");
+      out.write("\t\t<div id=\"pr\">\r\n");
       out.write("\t\t</div>\r\n");
       out.write("\t</div>\r\n");
       out.write("\t<div id=\"main\">\r\n");
@@ -163,9 +165,11 @@ public final class buyItemConfirm_jsp extends org.apache.jasper.runtime.HttpJspB
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  s:form
-    org.apache.struts2.views.jsp.ui.FormTag _jspx_th_s_005fform_005f0 = (org.apache.struts2.views.jsp.ui.FormTag) _005fjspx_005ftagPool_005fs_005fform.get(org.apache.struts2.views.jsp.ui.FormTag.class);
+    org.apache.struts2.views.jsp.ui.FormTag _jspx_th_s_005fform_005f0 = (org.apache.struts2.views.jsp.ui.FormTag) _005fjspx_005ftagPool_005fs_005fform_0026_005faction.get(org.apache.struts2.views.jsp.ui.FormTag.class);
     _jspx_th_s_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fform_005f0.setParent(null);
+    // /buyItemConfirm.jsp(80,3) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fform_005f0.setAction("BuyItemConfirmAction");
     int _jspx_eval_s_005fform_005f0 = _jspx_th_s_005fform_005f0.doStartTag();
     if (_jspx_eval_s_005fform_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       if (_jspx_eval_s_005fform_005f0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
@@ -196,10 +200,19 @@ public final class buyItemConfirm_jsp extends org.apache.jasper.runtime.HttpJspB
           return true;
         out.write("<span>個</span></td>\r\n");
         out.write("\t\t\t\t</tr>\r\n");
+        out.write("\t\t\t\t<tr>\r\n");
+        out.write("\t\t\t\t\t<td>支払い方法</td>\r\n");
+        out.write("\t\t\t\t\t<td>");
+        if (_jspx_meth_s_005fproperty_005f3(_jspx_th_s_005fform_005f0, _jspx_page_context))
+          return true;
+        out.write("</td>\r\n");
+        out.write("\t\t\t\t</tr>\r\n");
         out.write("\t\t\t\t<tr><td><br></td></tr>\r\n");
         out.write("\t\t\t\t<tr>\r\n");
-        out.write("\t\t\t\t\t<td><input type=\"button\" value=\"戻る\" onclick=\"submitAction('HomeAction')\"/></td>\r\n");
-        out.write("\t\t\t\t\t<td><input type=\"button\" value=\"完了\" onclick=\"submitAction('BuyItemConfirmAction')\"/></td>\r\n");
+        out.write("\t\t\t\t\t<td><input type=\"button\" value=\"戻る\"\r\n");
+        out.write("\t\t\t\t\tonclick=\"submitAction('HomeAction')\"/></td>\r\n");
+        out.write("\t\t\t\t\t<td><input type=\"button\" value=\"完了\"\r\n");
+        out.write("\t\t\t\t\tonclick=\"submitAction('BuyItemConfirmAction')\"/></td>\r\n");
         out.write("\t\t\t\t</tr>\r\n");
         out.write("\t\t\t");
         int evalDoAfterBody = _jspx_th_s_005fform_005f0.doAfterBody();
@@ -211,10 +224,10 @@ public final class buyItemConfirm_jsp extends org.apache.jasper.runtime.HttpJspB
       }
     }
     if (_jspx_th_s_005fform_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005fform.reuse(_jspx_th_s_005fform_005f0);
+      _005fjspx_005ftagPool_005fs_005fform_0026_005faction.reuse(_jspx_th_s_005fform_005f0);
       return true;
     }
-    _005fjspx_005ftagPool_005fs_005fform.reuse(_jspx_th_s_005fform_005f0);
+    _005fjspx_005ftagPool_005fs_005fform_0026_005faction.reuse(_jspx_th_s_005fform_005f0);
     return false;
   }
 
@@ -226,7 +239,7 @@ public final class buyItemConfirm_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f0 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /buyItemConfirm.jsp(81,9) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /buyItemConfirm.jsp(83,9) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f0.setValue("session.buyItem_name");
     int _jspx_eval_s_005fproperty_005f0 = _jspx_th_s_005fproperty_005f0.doStartTag();
     if (_jspx_th_s_005fproperty_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -245,7 +258,7 @@ public final class buyItemConfirm_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f1 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /buyItemConfirm.jsp(85,9) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /buyItemConfirm.jsp(87,9) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f1.setValue("session.buyItem_price");
     int _jspx_eval_s_005fproperty_005f1 = _jspx_th_s_005fproperty_005f1.doStartTag();
     if (_jspx_th_s_005fproperty_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -264,7 +277,7 @@ public final class buyItemConfirm_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f2 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f2.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /buyItemConfirm.jsp(89,9) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /buyItemConfirm.jsp(91,9) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f2.setValue("session.count");
     int _jspx_eval_s_005fproperty_005f2 = _jspx_th_s_005fproperty_005f2.doStartTag();
     if (_jspx_th_s_005fproperty_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -272,6 +285,25 @@ public final class buyItemConfirm_jsp extends org.apache.jasper.runtime.HttpJspB
       return true;
     }
     _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f2);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005fproperty_005f3(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:property
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f3 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_005fproperty_005f3.setPageContext(_jspx_page_context);
+    _jspx_th_s_005fproperty_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
+    // /buyItemConfirm.jsp(95,9) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fproperty_005f3.setValue("session.pay");
+    int _jspx_eval_s_005fproperty_005f3 = _jspx_th_s_005fproperty_005f3.doStartTag();
+    if (_jspx_th_s_005fproperty_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f3);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f3);
     return false;
   }
 }

@@ -11,6 +11,8 @@
 	<meta http-equiv="itemtoolbar" content="no"/>
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<title>BuyItemConfirm画面</title>
 
 	<style type="text/css">
@@ -67,7 +69,7 @@
 </head>
 <body>
 	<div id="id">
-		<div id="pr"/>
+		<div id="pr">
 		</div>
 	</div>
 	<div id="main">
@@ -75,7 +77,7 @@
 			<p>BuyItemConfirm</p>
 		</div>
 		<div>
-			<s:form>
+			<s:form action="BuyItemConfirmAction">
 				<tr>
 					<td>商品名</td>
 					<td><s:property value="session.buyItem_name"/></td>
@@ -94,8 +96,10 @@
 				</tr>
 				<tr><td><br></td></tr>
 				<tr>
-					<td><input type="button" value="戻る" onclick="submitAction('HomeAction')"/></td>
-					<td><input type="button" value="完了" onclick="submitAction('BuyItemConfirmAction')"/></td>
+					<td><input type="button" value="戻る"
+					onclick="submitAction('HomeAction')"/></td>
+					<td><input type="button" value="完了"
+					onclick="submitAction('BuyItemConfirmAction')"/></td>
 				</tr>
 			</s:form>
 		</div>
