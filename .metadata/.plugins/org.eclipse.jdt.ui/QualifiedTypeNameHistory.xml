@@ -6,4 +6,6 @@
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="com.internousdev.ecsite2.dto.LoginDTO"/>
 <fullyQualifiedTypeName name="com.internousdev.ecsite2.dto.BuyItemDTO"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 </qualifiedTypeNameHistroy>

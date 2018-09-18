@@ -64,7 +64,7 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 		this.session = session;
 	}
 
-	public ArrayList<MyPageDTO> getMyPageList(){
+	public ArrayList<MyPageDTO> getMpList(){
 		return this.mpList;
 	}
 

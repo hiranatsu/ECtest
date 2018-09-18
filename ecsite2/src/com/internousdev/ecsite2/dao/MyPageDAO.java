@@ -18,11 +18,10 @@ public class MyPageDAO {
 	public ArrayList<MyPageDTO> getMyPageUserInfo(String item_transaction_id, String user_master_id) throws SQLException{
 		ArrayList<MyPageDTO> mpList = new ArrayList<MyPageDTO>();
 		String sql = "SELECT ubit.id, iit.item_name, ubit.total_price, ubit.total_count,ubit.pay,ubit.insert_date "
-				+ "FROM user_buy_transaction ubit LEFT JOIN item_info_transaction iit "
+				+ "FROM user_buy_item_transaction ubit LEFT JOIN item_info_transaction iit "
 				+ "ON ubit.item_transaction_id = iit.id "
 				+ "WHERE ubit.item_transaction_id = ? AND ubit.user_master_id = ? "
 				+ "ORDER BY insert_date DESC";
-
 
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);
@@ -34,6 +33,7 @@ public class MyPageDAO {
 			while(rs.next()){
 				MyPageDTO mpDTO = new MyPageDTO();
 				mpDTO.setId(rs.getString("id"));
+				mpDTO.setItemName(rs.getString("item_name"));
 				mpDTO.setTotalPrice(rs.getString("total_price"));
 				mpDTO.setTotalCount(rs.getString("total_count"));
 				mpDTO.setPayment(rs.getString("pay"));
