@@ -131,7 +131,7 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      <Context docBase="C:\Users\internousdev\Desktop\workspace\workspace-hirano\ECtest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\internousdev\Desktop\workspace\workspace-hirano\ECtest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ecsite" path="/ecsite" reloadable="true" source="org.eclipse.jst.jee.server:ecsite"/><Context docBase="C:\Users\internousdev\Desktop\workspace\workspace-hirano\ECtest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ecsite2" path="/ecsite2" reloadable="true" source="org.eclipse.jst.jee.server:ecsite2"/></Host>
+      <Context docBase="C:\Users\internousdev\Desktop\workspace\workspace-hirano\ECtest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\internousdev\Desktop\workspace\workspace-hirano\ECtest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ecsite" path="/ecsite" reloadable="true" source="org.eclipse.jst.jee.server:ecsite"/><Context docBase="C:\Users\internousdev\Desktop\workspace\workspace-hirano\ECtest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ecsite2" path="/ecsite2" reloadable="true" source="org.eclipse.jst.jee.server:ecsite2"/><Context docBase="C:\Users\internousdev\Desktop\workspace\workspace-hirano\ECtest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\myecsite01" path="/myecsite01" reloadable="true" source="org.eclipse.jst.jee.server:myecsite01"/></Host>
     </Engine>
   </Service>
 </Server>

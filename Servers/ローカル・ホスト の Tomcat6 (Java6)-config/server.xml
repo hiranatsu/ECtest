@@ -131,7 +131,7 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      <Context docBase="ecsite" path="/ecsite" reloadable="true" source="org.eclipse.jst.jee.server:ecsite"/><Context docBase="ecsite2" path="/ecsite2" reloadable="true" source="org.eclipse.jst.jee.server:ecsite2"/></Host>
+      <Context docBase="ecsite" path="/ecsite" reloadable="true" source="org.eclipse.jst.jee.server:ecsite"/><Context docBase="ecsite2" path="/ecsite2" reloadable="true" source="org.eclipse.jst.jee.server:ecsite2"/><Context docBase="myecsite01" path="/myecsite01" reloadable="true" source="org.eclipse.jst.jee.server:myecsite01"/></Host>
     </Engine>
   </Service>
 </Server>
