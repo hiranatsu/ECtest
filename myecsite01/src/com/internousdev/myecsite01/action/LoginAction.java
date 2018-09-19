@@ -30,7 +30,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
 			result = SUCCESS;
 			BuyItemDTO biDTO = biDAO.getBuyItemInfo();
 
-			session.put("login_user?_id", lgDTO.getLoginId());
+			session.put("login_user_id", lgDTO.getLoginId());
 			session.put("id", biDTO.getId());
 			session.put("buyItem_name", biDTO.getItemName());
 			session.put("buyItem_price", biDTO.getItemPrice());

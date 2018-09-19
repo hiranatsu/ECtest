@@ -64,7 +64,7 @@
 	</div>
 	<div id="main">
 		<div id="top">
-			<p>BuyItem</p>
+			<p>BuyItem -商品一覧-</p>
 		</div>
 		<div>
 			<s:form action="BuyItemAction">

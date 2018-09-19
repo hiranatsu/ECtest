@@ -8,6 +8,10 @@
 	<package name="com.internousdev.myecsite01.action" extends="struts-default">
 
 	<!-- GoHomeAction -->
+	<action name="GoHomeAction" class="com.internousdev.myecsite01.action.GoHomeAction"
+	method="execute">
+		<result name="success">home.jsp</result>
+	</action>
 
 	<!-- HomeAction -->
 	<action name="HomeAction" class="com.internousdev.myecsite01.action.HomeAction"
@@ -17,7 +21,7 @@
 	</action>
 
 	<!-- LoginAction -->
-	<action name="LoinAction" class="com.internousdev.myecsite01.action.LoginAction"
+	<action name="LoginAction" class="com.internousdev.myecsite01.action.LoginAction"
 	method="execute">
 		<result name="success">buyItem.jsp</result>
 		<result name="error">login.jsp</result>
