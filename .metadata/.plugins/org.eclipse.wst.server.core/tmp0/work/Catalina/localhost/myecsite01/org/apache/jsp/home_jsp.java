@@ -85,7 +85,7 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\tfont-family:Verdana,Helvetica,sans-serif;\r\n");
       out.write("\tfont-size:12px;\r\n");
       out.write("\tcolor:#333;\r\n");
-      out.write("\tbackground-image:url(\"../images/haikei1.jpg\");\r\n");
+      out.write("\tbackground-image:url(\"haikei1.jpg\");\r\n");
       out.write("\t}\r\n");
       out.write("\r\n");
       out.write("\ttable{\r\n");
@@ -102,7 +102,7 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t#header{\r\n");
       out.write("\theight:100px;\r\n");
       out.write("\tpadding:30px;\r\n");
-      out.write("\tbackground-image:url(\"../images/ocha.jpg\");\r\n");
+      out.write("\tbackground-image:url(\"ocha.jpg\");\r\n");
       out.write("\tbackground-size:cover;\r\n");
       out.write("\ttext-align:center;\r\n");
       out.write("\r\n");
