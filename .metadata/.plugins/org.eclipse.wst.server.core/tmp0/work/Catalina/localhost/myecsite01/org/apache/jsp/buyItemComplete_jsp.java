@@ -104,10 +104,15 @@ public final class buyItemComplete_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("\theight:600px;\r\n");
       out.write("\ttext-align:center;\r\n");
       out.write("\t}\r\n");
+      out.write("\r\n");
       out.write("\t#footer{\r\n");
       out.write("\twidth:100%;\r\n");
       out.write("\theight:50px;\r\n");
       out.write("\tbackground-color:#CCCCCC;\r\n");
+      out.write("\ttext-align:center;\r\n");
+      out.write("\tline-height:50px;\r\n");
+      out.write("\tfont-size:10px;\r\n");
+      out.write("\tcolor:white;\r\n");
       out.write("\tclear:both;\r\n");
       out.write("\t}\r\n");
       out.write("\t</style>\r\n");
@@ -137,7 +142,7 @@ public final class buyItemComplete_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("\r\n");
       out.write("\t</div>\r\n");
       out.write("\t<div id=\"footer\">\r\n");
-      out.write("\t\t<div id=\"pr\"></div>\r\n");
+      out.write("\t\t<div id=\"pr\"> Copyright © 2018 MYECSITE01. All Rights Reserved. </div>\r\n");
       out.write("\t</div>\r\n");
       out.write("\r\n");
       out.write("</body>\r\n");
@@ -163,7 +168,7 @@ public final class buyItemComplete_jsp extends org.apache.jasper.runtime.HttpJsp
     org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f0 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
     _jspx_th_s_005furl_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005furl_005f0.setParent(null);
-    // /buyItemComplete.jsp(72,13) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /buyItemComplete.jsp(77,13) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f0.setAction("MyPageAction");
     int _jspx_eval_s_005furl_005f0 = _jspx_th_s_005furl_005f0.doStartTag();
     if (_jspx_th_s_005furl_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -182,7 +187,7 @@ public final class buyItemComplete_jsp extends org.apache.jasper.runtime.HttpJsp
     org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f1 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
     _jspx_th_s_005furl_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005furl_005f1.setParent(null);
-    // /buyItemComplete.jsp(73,26) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /buyItemComplete.jsp(78,26) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f1.setAction("GoHomeAction");
     int _jspx_eval_s_005furl_005f1 = _jspx_th_s_005furl_005f1.doStartTag();
     if (_jspx_th_s_005furl_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

@@ -17,7 +17,7 @@ public class MyPageDAO {
 	//DBから購入履歴を取得するメソッド
 	public ArrayList<MyPageDTO> getMyPageUserInfo(String item_transaction_id, String user_master_id) throws SQLException{
 		ArrayList<MyPageDTO> mpDTOList = new ArrayList<MyPageDTO>();
-		String sql = "SELECT ubit.id, iit.item_name, ubit.total_price, ubit.total_count, ubit.pay, ubit.insert_date "
+		String sql = "SELECT ubit.id, iit.item_name, iit.item_price, ubit.total_price, ubit.total_count, ubit.pay, ubit.insert_date "
 				+ " FROM user_buy_item_transaction ubit"
 				+ " LEFT JOIN item_info_transaction iit"
 				+ " ON ubit.item_transaction_id = iit.id"
@@ -36,6 +36,7 @@ public class MyPageDAO {
 				MyPageDTO mpDTO = new MyPageDTO();
 				mpDTO.setId(rs.getString("id"));
 				mpDTO.setItemName(rs.getString("item_name"));
+				mpDTO.setUnitPrice(rs.getString("item_price"));
 				mpDTO.setTotalPrice(rs.getString("total_price"));
 				mpDTO.setTotalCount(rs.getString("total_count"));
 				mpDTO.setPayment(rs.getString("pay"));

@@ -131,10 +131,8 @@ public final class error_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t</div>\r\n");
       out.write("\t</div>\r\n");
       out.write("\t<div id=\"footer\">\r\n");
-      out.write("\t\t<div id=\"pr\">\r\n");
-      out.write("\t\t</div>\r\n");
+      out.write("\t\t<div id=\"pr\"> Copyright © 2018 MYECSITE01. All Rights Reserved. </div>\r\n");
       out.write("\t</div>\r\n");
-      out.write("\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {

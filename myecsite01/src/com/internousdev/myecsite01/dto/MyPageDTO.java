@@ -3,6 +3,7 @@ package com.internousdev.myecsite01.dto;
 public class MyPageDTO {
 
 	public String itemName;
+	public String unitPrice;
 	public String totalPrice;
 	public String totalCount;
 	public String payment;
@@ -16,6 +17,13 @@ public class MyPageDTO {
 	}
 	public void setItemName(String itemName){
 		this.itemName = itemName;
+	}
+
+	public String getUnitPrice(){
+		return unitPrice;
+	}
+	public void setUnitPrice(String unitPrice){
+		this.unitPrice = unitPrice;
 	}
 
 	public String getTotalPrice(){

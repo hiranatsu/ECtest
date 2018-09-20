@@ -54,6 +54,10 @@
 	width:100%;
 	height:50px;
 	background-color:#CCCCCC;
+	text-align:center;
+	line-height:50px;
+	font-size:10px;
+	color:white;
 	clear:both;
 	}
 
@@ -82,16 +86,18 @@
 			<table border="1">
 			<tr>
 				<th>商品名</th>
-				<th>値段</th>
+				<th>単価</th>
 				<th>購入個数</th>
+				<th>合計金額</th>
 				<th>支払い方法</th>
 				<th>購入日</th>
 			</tr>
 			<s:iterator value="mpList">
 				<tr>
 					<td><s:property value="itemName"/></td>
-					<td><s:property value="totalPrice"/><span>円</span></td>
+					<td><s:property value="unitPrice"/><span>円</span></td>
 					<td><s:property value="totalCount"/><span>個</span></td>
+					<td><s:property value="totalPrice"/><span>円</span></td>
 					<td><s:property value="payment"/></td>
 					<td><s:property value="insert_date"/></td>
 				</tr>
@@ -112,7 +118,7 @@
 		</div>
 	</div>
 	<div id="footer">
-		<div id="pr"></div>
+		<div id="pr"> Copyright © 2018 MYECSITE01. All Rights Reserved. </div>
 	</div>
 
 </body>

@@ -50,10 +50,15 @@
 	height:600px;
 	text-align:center;
 	}
+
 	#footer{
 	width:100%;
 	height:50px;
 	background-color:#CCCCCC;
+	text-align:center;
+	line-height:50px;
+	font-size:10px;
+	color:white;
 	clear:both;
 	}
 	</style>
@@ -108,7 +113,7 @@
 
 	</div>
 	<div id="footer">
-		<div id="pr"></div>
+		<div id="pr"> Copyright © 2018 MYECSITE01. All Rights Reserved. </div>
 	</div>
 
 </body>
