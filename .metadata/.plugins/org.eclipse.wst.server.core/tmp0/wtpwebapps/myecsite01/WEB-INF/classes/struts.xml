@@ -61,9 +61,18 @@
 		<result name="back">buyItem.jsp</result>
 	</action>
 
-	<!--  -->
+	<!-- MyPageAction -->
+	<action name="MyPageAction" class="com.internousdev.myecsite01.action.MyPageAction"
+	method="execute">
+		<result name="success">myPage.jsp</result>
+		<result name="error">error.jsp</result>
+	</action>
 
-	<!--  -->
+	<!-- LogoutAction -->
+	<action name="LogoutAction" class="com.internousdev.myecsite01.action.LogoutAction"
+	method="execute">
+		<result name="success">home.jsp</result>
+	</action>
 
 	</package>
 
