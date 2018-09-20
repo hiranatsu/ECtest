@@ -12,7 +12,7 @@ public class BuyItemCompleteDAO {
 	private DBConnector db = new DBConnector();
 	private Connection con = db.getConnection();
 	private DateUtil du = new DateUtil();
-	private String sql = "INSERT INTO user_buy_item_transaction (item_transacrion_id, total_price, total_count, user_master_id, pay, insert_date) VALUES(?,?,?,?,?,?)";
+	private String sql = "INSERT INTO user_buy_item_transaction (item_transaction_id, total_price, total_count, user_master_id, pay, insert_date) VALUES (?,?,?,?,?,?)";
 
 	public void buyItemInfo(String item_transaction_id, String user_master_id, String total_price, String total_count, String pay) throws SQLException{
 
@@ -26,6 +26,7 @@ public class BuyItemCompleteDAO {
 			ps.setString(6, du.getDate());
 
 			ps.execute();
+
 		}catch(Exception e){
 			e.printStackTrace();
 		}finally{
