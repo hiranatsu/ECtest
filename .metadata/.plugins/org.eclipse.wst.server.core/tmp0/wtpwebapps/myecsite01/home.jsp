@@ -21,7 +21,8 @@
        auto: true,
        mode: 'fade',
        pause: 5000,
-       speed: 2000
+       speed: 2000,
+       controls: false
                          });
     });
  	</script>
@@ -52,14 +53,24 @@
 	}
 
 	#header{
-	height:50px;
-	padding:30px;
+	height:30px;
+	padding:10px;
 	background-color:#CCCCCC;
-	background-size:cover;
-	text-align:left;
-	font-size:20px;
-
 	}
+
+	#header ul{
+	float:left;
+	line-height:10px;
+	}
+
+	#header ul li{
+	float:left;
+	list-style:none;
+	font-size:12px;
+	color:black;
+	padding-right:15px;
+	}
+
 
 	#main{
 	width:100%;
@@ -68,15 +79,13 @@
 	}
 
 	.abc img{
-	width:700px;
-	max-width:100%;
 	display: block;
 	margin: 0 auto;
 
 	}
 
 	.bx-wrapper {
-  	margin: 30 auto;
+  	margin-bottom: 30;
   	-moz-box-shadow: none;
   	-webkit-box-shadow: none;
   	box-shadow: none;
@@ -97,7 +106,6 @@
 	}
 
 	#text-center{
-
 	display:inline-block;
 	text-align:center;
 	}
@@ -105,26 +113,34 @@
 	</style>
 </head>
 <body>
-
+			<h1 STYLE="color:black; margin:0 auto; font-size:50px;">Ocha</h1>
 	<div id="header">
+
+			<ul>
+				<li><a href='<s:url action="HomeAction"/>'>商品一覧</a></li>
+				<li>カート</li>
+				<li><a href='<s:url action="MyPageAction"/>'>マイページ</a></li>
+				<li>ログイン</li>
+				<li>ログアウト</li>
+			</ul>
+
 		<div id="pr">
-		<h1>Ocha</h1>
 		</div>
 	</div>
 	<div id="main">
-
 		<div id="top"><p>Home</p></div>
 	    <div><ul class="abc">
-	      <li><img src="Home2.jpg"></li>
-	      <li><img src="Home3.jpg"></li>
-	      <li><img src="Home.jpg"></li>
-	      <li><img src="Home4.jpg"></li>
-	      <li><img src="Home5.jpg"></li>
+	      <li><img src="Home2.jpg" width=650></li>
+	      <li><img src="Home3.jpg" width=650></li>
+	      <li><img src="Home.jpg"  width=650></li>
+	      <li><img src="Home4.jpg" width=650></li>
+	      <li><img src="Home5.jpg" width=650></li>
 	   </ul>
 	   </div>
 		<div id="text-center">
+		<p>ようこそ「Ocha」へ。<br>このサイトは全国から選りすぐられた日本茶を販売しております。<br>お茶はおいしいですよね、日本の心です。一杯どうぞ。<br>え？いらない？そんなこといわずにぜひ寄ってらしてください。</p>
 			<s:form action="HomeAction">
-				<s:submit value="商品購入へ"/>
+				<s:submit value="商品一覧へ"/>
 			</s:form>
 			<s:if test="#session.id != null">
 				<p>ログアウトする場合は

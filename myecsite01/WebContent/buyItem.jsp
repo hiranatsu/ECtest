@@ -14,7 +14,7 @@
 	<title>BuyItem画面</title>
 
 	<style type="text/css">
-	
+
 	body{
 	margin:0;
 	padding:0;
@@ -28,21 +28,33 @@
 
 	table{
 	text-align:center;
-	margin: 0 auto;
+	margin:0 auto;
 	}
 
 	#top{
 	width:780px;
 	margin:30px auto;
 	border:1px solid #333;
+
 	}
 
 	#header{
-	height:100px;
-	padding:30px;
-	background-image:url("ocha.jpg");
-	background size:cover;
-	text-align:center;
+	height:30px;
+	padding:10px;
+	background-color:#CCCCCC;
+	}
+
+	#header ul{
+	float:left;
+	line-height:10px;
+	}
+
+	#header ul li{
+	float:left;
+	list-style:none;
+	font-size:12px;
+	color:black;
+	padding-right:15px;
 	}
 
 	#main{
@@ -65,8 +77,19 @@
 
 </head>
 <body>
+			<h1 STYLE="color:black; margin:0 auto; font-size:50px;">Ocha</h1>
 	<div id="header">
-		<div id="pr"></div>
+
+			<ul>
+				<li><a href='<s:url action="HomeAction"/>'>商品一覧</a></li>
+				<li>カート</li>
+				<li>マイページ</li>
+				<li>ログイン</li>
+				<li>ログアウト</li>
+			</ul>
+
+		<div id="pr">
+		</div>
 	</div>
 	<div id="main">
 		<div id="top">

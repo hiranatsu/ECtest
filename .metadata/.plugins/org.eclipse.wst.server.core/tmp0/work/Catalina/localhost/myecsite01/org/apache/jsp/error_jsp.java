@@ -88,15 +88,26 @@ public final class error_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\twidth:780px;\r\n");
       out.write("\tmargin:30px auto;\r\n");
       out.write("\tborder:1px solid #333;\r\n");
+      out.write("\r\n");
       out.write("\t}\r\n");
       out.write("\r\n");
       out.write("\t#header{\r\n");
-      out.write("\theight:100px;\r\n");
-      out.write("\tpadding:30px;\r\n");
-      out.write("\tbackground-image:url(\"ocha.jpg\");\r\n");
-      out.write("\tbackground-size:cover;\r\n");
-      out.write("\ttext-align:center;\r\n");
+      out.write("\theight:30px;\r\n");
+      out.write("\tpadding:10px;\r\n");
+      out.write("\tbackground-color:#CCCCCC;\r\n");
+      out.write("\t}\r\n");
       out.write("\r\n");
+      out.write("\t#header ul{\r\n");
+      out.write("\tfloat:left;\r\n");
+      out.write("\tline-height:10px;\r\n");
+      out.write("\t}\r\n");
+      out.write("\r\n");
+      out.write("\t#header ul li{\r\n");
+      out.write("\tfloat:left;\r\n");
+      out.write("\tlist-style:none;\r\n");
+      out.write("\tfont-size:12px;\r\n");
+      out.write("\tcolor:black;\r\n");
+      out.write("\tpadding-right:15px;\r\n");
       out.write("\t}\r\n");
       out.write("\r\n");
       out.write("\t#main{\r\n");
@@ -109,6 +120,10 @@ public final class error_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\twidth:100%;\r\n");
       out.write("\theight:50px;\r\n");
       out.write("\tbackground-color:#CCCCCC;\r\n");
+      out.write("\ttext-align:center;\r\n");
+      out.write("\tline-height:50px;\r\n");
+      out.write("\tfont-size:10px;\r\n");
+      out.write("\tcolor:white;\r\n");
       out.write("\tclear:both;\r\n");
       out.write("\t}\r\n");
       out.write("\r\n");
@@ -116,7 +131,20 @@ public final class error_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</head>\r\n");
       out.write("<body>\r\n");
       out.write("\r\n");
+      out.write("\t\t\t<h1 STYLE=\"color:black; margin:0 auto; font-size:50px;\">Ocha</h1>\r\n");
       out.write("\t<div id=\"header\">\r\n");
+      out.write("\r\n");
+      out.write("\t\t\t<ul>\r\n");
+      out.write("\t\t\t\t<li><a href='");
+      if (_jspx_meth_s_005furl_005f0(_jspx_page_context))
+        return;
+      out.write("'>商品一覧</a></li>\r\n");
+      out.write("\t\t\t\t<li>カート</li>\r\n");
+      out.write("\t\t\t\t<li>マイページ</li>\r\n");
+      out.write("\t\t\t\t<li>ログイン</li>\r\n");
+      out.write("\t\t\t\t<li>ログアウト</li>\r\n");
+      out.write("\t\t\t</ul>\r\n");
+      out.write("\r\n");
       out.write("\t\t<div id=\"pr\">\r\n");
       out.write("\t\t</div>\r\n");
       out.write("\t</div>\r\n");
@@ -125,7 +153,7 @@ public final class error_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t<div>\r\n");
       out.write("\t\t\t<p>エラーが発生しました。</p>\r\n");
       out.write("\t\t\t<p>Homeへ戻る場合は<a href='");
-      if (_jspx_meth_s_005furl_005f0(_jspx_page_context))
+      if (_jspx_meth_s_005furl_005f1(_jspx_page_context))
         return;
       out.write("'>こちら</a></p>\r\n");
       out.write("\t\t</div>\r\n");
@@ -156,14 +184,33 @@ public final class error_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f0 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
     _jspx_th_s_005furl_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005furl_005f0.setParent(null);
-    // /error.jsp(72,25) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005furl_005f0.setAction("GoHomeAction");
+    // /error.jsp(83,17) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f0.setAction("HomeAction");
     int _jspx_eval_s_005furl_005f0 = _jspx_th_s_005furl_005f0.doStartTag();
     if (_jspx_th_s_005furl_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fs_005furl_0026_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f0);
       return true;
     }
     _005fjspx_005ftagPool_005fs_005furl_0026_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f0);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005furl_005f1(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:url
+    org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f1 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
+    _jspx_th_s_005furl_005f1.setPageContext(_jspx_page_context);
+    _jspx_th_s_005furl_005f1.setParent(null);
+    // /error.jsp(97,25) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f1.setAction("GoHomeAction");
+    int _jspx_eval_s_005furl_005f1 = _jspx_th_s_005furl_005f1.doStartTag();
+    if (_jspx_th_s_005furl_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005furl_0026_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f1);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005furl_0026_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f1);
     return false;
   }
 }
