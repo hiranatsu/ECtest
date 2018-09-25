@@ -14,7 +14,7 @@ public class BuyItemDAO {
 	private BuyItemDTO biDTO = new BuyItemDTO();
 
 	public BuyItemDTO getBuyItemInfo(){
-		String sql = "SELECT id, item_name, item_price FROM item_info_transaction";
+		String sql = "SELECT TOP6 id, item_name, item_price FROM item_info_transaction";
 
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);

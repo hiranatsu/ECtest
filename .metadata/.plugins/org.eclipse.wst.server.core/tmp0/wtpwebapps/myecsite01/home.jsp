@@ -117,11 +117,12 @@
 	<div id="header">
 
 			<ul>
+				<li><a href='<s:url action="GoHomeAction"/>'>ホーム</a></li>
 				<li><a href='<s:url action="HomeAction"/>'>商品一覧</a></li>
 				<li>カート</li>
-				<li><a href='<s:url action="MyPageAction"/>'>マイページ</a></li>
-				<li>ログイン</li>
-				<li>ログアウト</li>
+				<li><a href='<s:url action="MyPageAction"/>'>購入履歴</a></li>
+				<li><a href='<s:url action="LoginAction"/>'>ログイン</a></li>
+				<li><s:if test="#session.id != null"><a href='<s:url action="LogoutAction"/>'>ログアウト</a></s:if></li>
 			</ul>
 
 		<div id="pr">
