@@ -1,0 +1,5 @@
+package beancheck;
+
+public class SearchServlet {
+
+}

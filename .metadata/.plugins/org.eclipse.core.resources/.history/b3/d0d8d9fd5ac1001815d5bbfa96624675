@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Beans確認</title>
+
+	<style type="text/css">
+		.block1{
+		display:inline-block;
+		width:4em;
+		}
+		.block2{
+		display:inline-block;
+		width:7em;
+		}
+	</style>
+
+</head>
+<body>
+
+	<h1>Beans確認</h1>
+	<form action="SerchServlet" method="post">
+		名前：<input type="text" name="userName"/><br>
+		<span class="block1">住所:</span><input type="radio" name="Address" value="Tokyo"/>東京<br>
+		<span class="block1"></span><input type="radio" name="Address" value="Tokyo"/>千葉<br>
+		<span class="block1"></span><input type="radio" name="Address" value="Tokyo"/>神奈川<br>
+	</form>
+</body>
+</html>

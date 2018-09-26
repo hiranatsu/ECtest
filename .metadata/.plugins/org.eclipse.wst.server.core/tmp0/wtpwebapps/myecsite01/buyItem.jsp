@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="com.internousdev.myecsite01.dto.BuyItemDTO" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -96,14 +98,51 @@
 			<p>BuyItem -商品一覧-</p>
 		</div>
 		<div>
+			<% ArrayList<BuyItemDTO> biDTOList =(ArrayList<BuyItemDTO>) request.getAttribute("biDTOList"); %>
 			<s:form action="BuyItemAction">
+			<table>
+			<tbody>
+				<tr>
+					<th>商品ID</th>
+					<th>商品名</th>
+					<th>値段</th>
+					<th>個数</th>
+				</tr>
+
+				<% for (BuyItemDTO bibean : biDTOList) { %>
+				<tr>
+					<td><s:property value="session.getId"/></td>
+					<td><s:property value="session.getBuyItem_name"/></td>
+					<td class="int"><s:property value="session.getBuyItem_price"/><span>円</span></td>
+					<td class="int">
+						<select name="count">
+							<option value="1" selected="selected">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="pay" value="1" checked="checked">現金払い
+						<input type="radio" name="pay" value="2">クレジットカード
+					</td>
+				</tr>
+				<%} %>
+				<tr>
+					<td><s:submit value="購入"/></td>
+				</tr>
+
+			</tbody>
+			</table>
+
+
+	<!--
 			<table>
 				<tr>
 					<td><span>商品名</span></td>
-					<td><s:property value="session.buyItem_name"/><br></td>
-					<td><s:property value="session.buyItem_name"/><br></td>
-					<td><s:property value="session.buyItem_name"/><br></td>
-					<td><s:property value="session.buyItem_name"/><br></td>
 					<td><s:property value="session.buyItem_name"/><br></td>
 				</tr>
 				<tr>
@@ -132,7 +171,7 @@
 				<tr>
 					<td><s:submit value="購入"/></td>
 				</tr>
-			</table>
+			</table> -->
 			</s:form>
 			<div>
 				<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
